@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C06F438-AD9D-417F-AEC7-46139048307B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProyectoFinal</RootNamespace>
+    <AssemblyName>ProyectoFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Desktop\Design Dashboard Modern\Design Dashboard Modern\BUNIFU UI\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Alumnos.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Asignaciondivisiondocente_Result.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\AsignacionGrados.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\AñoLectivo.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\CondicionDocente.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Directivos.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Divisiones.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Docentes.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Grados.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Inscripciones.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Inscripcionesconsultalistado_Result.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Institucion.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Niveles.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ProyectoInscripciones.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoInscripciones.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ProyectoInscripciones.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ProyectoInscripciones.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoInscripciones.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\sysdiagrams.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Turnos.cs">
+      <DependentUpon>ProyectoInscripciones.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\NAlumno.cs" />
+    <Compile Include="Negocio\Nasignaciongrado.cs" />
+    <Compile Include="Negocio\Nañolectivo.cs" />
+    <Compile Include="Negocio\Ncondiciondocente.cs" />
+    <Compile Include="Negocio\Ndirectivos.cs" />
+    <Compile Include="Negocio\NDivisiones.cs" />
+    <Compile Include="Negocio\NDocente.cs" />
+    <Compile Include="Negocio\NGrado.cs" />
+    <Compile Include="Negocio\Ninscripcion.cs" />
+    <Compile Include="Negocio\NInstitucion.cs" />
+    <Compile Include="Negocio\Nnivel.cs" />
+    <Compile Include="Negocio\Nturno.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProyectoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProyectoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ValidacionCompleta.cs" />
+    <Compile Include="Vistas\abm\abmalumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\abm\abmalumnos.Designer.cs">
+      <DependentUpon>abmalumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\abm\abmasignaciongrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\abm\abmasignaciongrado.Designer.cs">
+      <DependentUpon>abmasignaciongrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\abm\abmañolectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\abm\abmañolectivo.Designer.cs">
+      <DependentUpon>abmañolectivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\abm\abmcondiciondocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\abm\abmcondiciondocente.Designer.cs">
+      <DependentUpon>abmcondiciondocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\abm\abmdirectivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\abm\abmdirectivos.Designer.cs">
+      <DependentUpon>abmdirectivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\abm\abmdivisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\abm\abmdivisiones.Designer.cs">
+      <DependentUpon>abmdivisiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\abm\abmdocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\abm\abmdocente.Designer.cs">
+      <DependentUpon>abmdocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\abm\abmgrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\abm\abmgrado.Designer.cs">
+      <DependentUpon>abmgrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\abm\abminscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\abm\abminscripcion.Designer.cs">
+      <DependentUpon>abminscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\abm\abminstitucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\abm\abminstitucion.Designer.cs">
+      <DependentUpon>abminstitucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\abm\abmniveles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\abm\abmniveles.Designer.cs">
+      <DependentUpon>abmniveles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\abm\abmturno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\abm\abmturno.Designer.cs">
+      <DependentUpon>abmturno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\abm\Submenualtas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\abm\Submenualtas.Designer.cs">
+      <DependentUpon>Submenualtas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Formabm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Formabm.Designer.cs">
+      <DependentUpon>Formabm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\formInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\formInicio.Designer.cs">
+      <DependentUpon>formInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FormListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FormListado.Designer.cs">
+      <DependentUpon>FormListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoAlumnos.Designer.cs">
+      <DependentUpon>ListadoAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Listado\listadoasignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Listado\listadoasignacion.Designer.cs">
+      <DependentUpon>listadoasignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoAñoLectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoAñoLectivo.Designer.cs">
+      <DependentUpon>ListadoAñoLectivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoCondicionDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoCondicionDocente.Designer.cs">
+      <DependentUpon>ListadoCondicionDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoDirectivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoDirectivos.Designer.cs">
+      <DependentUpon>ListadoDirectivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoDivisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoDivisiones.Designer.cs">
+      <DependentUpon>ListadoDivisiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoDocentes.Designer.cs">
+      <DependentUpon>ListadoDocentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoGrado.Designer.cs">
+      <DependentUpon>ListadoGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoInscripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoInscripciones.Designer.cs">
+      <DependentUpon>ListadoInscripciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoInstituciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoInstituciones.Designer.cs">
+      <DependentUpon>ListadoInstituciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoNiveles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoNiveles.Designer.cs">
+      <DependentUpon>ListadoNiveles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoTurnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Listado\ListadoTurnos.Designer.cs">
+      <DependentUpon>ListadoTurnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Listado\submenulistado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Listado\submenulistado.Designer.cs">
+      <DependentUpon>submenulistado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Modificar\Mdocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Modificar\Mdocente.Designer.cs">
+      <DependentUpon>Mdocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Modificar\Minscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Modificar\Minscripcion.Designer.cs">
+      <DependentUpon>Minscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Modificar\Minstitucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Modificar\Minstitucion.Designer.cs">
+      <DependentUpon>Minstitucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Modificar\Modificaralumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Modificar\Modificaralumno.Designer.cs">
+      <DependentUpon>Modificaralumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarAsignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarAsignacion.Designer.cs">
+      <DependentUpon>ModificarAsignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarAñoLectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarAñoLectivo.Designer.cs">
+      <DependentUpon>ModificarAñoLectivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarCondicionDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarCondicionDocente.Designer.cs">
+      <DependentUpon>ModificarCondicionDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarDirectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarDirectivo.Designer.cs">
+      <DependentUpon>ModificarDirectivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarDivision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarDivision.Designer.cs">
+      <DependentUpon>ModificarDivision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarGrado.Designer.cs">
+      <DependentUpon>ModificarGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarNivel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarNivel.Designer.cs">
+      <DependentUpon>ModificarNivel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Modificar\ModificarTurno.Designer.cs">
+      <DependentUpon>ModificarTurno.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vistas\abm\abmalumnos.resx">
+      <DependentUpon>abmalumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\abm\abmasignaciongrado.resx">
+      <DependentUpon>abmasignaciongrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\abm\abmañolectivo.resx">
+      <DependentUpon>abmañolectivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\abm\abmcondiciondocente.resx">
+      <DependentUpon>abmcondiciondocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\abm\abmdirectivos.resx">
+      <DependentUpon>abmdirectivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\abm\abmdivisiones.resx">
+      <DependentUpon>abmdivisiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\abm\abmdocente.resx">
+      <DependentUpon>abmdocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\abm\abmgrado.resx">
+      <DependentUpon>abmgrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\abm\abminscripcion.resx">
+      <DependentUpon>abminscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\abm\abminstitucion.resx">
+      <DependentUpon>abminstitucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\abm\abmniveles.resx">
+      <DependentUpon>abmniveles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\abm\abmturno.resx">
+      <DependentUpon>abmturno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\abm\Submenualtas.resx">
+      <DependentUpon>Submenualtas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Formabm.resx">
+      <DependentUpon>Formabm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\formInicio.resx">
+      <DependentUpon>formInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FormListado.resx">
+      <DependentUpon>FormListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Listado\ListadoAlumnos.resx">
+      <DependentUpon>ListadoAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Listado\listadoasignacion.resx">
+      <DependentUpon>listadoasignacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Listado\ListadoAñoLectivo.resx">
+      <DependentUpon>ListadoAñoLectivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Listado\ListadoCondicionDocente.resx">
+      <DependentUpon>ListadoCondicionDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Listado\ListadoDirectivos.resx">
+      <DependentUpon>ListadoDirectivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Listado\ListadoDivisiones.resx">
+      <DependentUpon>ListadoDivisiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Listado\ListadoDocentes.resx">
+      <DependentUpon>ListadoDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Listado\ListadoGrado.resx">
+      <DependentUpon>ListadoGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Listado\ListadoInscripciones.resx">
+      <DependentUpon>ListadoInscripciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Listado\ListadoInstituciones.resx">
+      <DependentUpon>ListadoInstituciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Listado\ListadoNiveles.resx">
+      <DependentUpon>ListadoNiveles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Listado\ListadoTurnos.resx">
+      <DependentUpon>ListadoTurnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Listado\submenulistado.resx">
+      <DependentUpon>submenulistado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Modificar\Mdocente.resx">
+      <DependentUpon>Mdocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Modificar\Minstitucion.resx">
+      <DependentUpon>Minstitucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Modificar\Modificaralumno.resx">
+      <DependentUpon>Modificaralumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Modificar\ModificarAsignacion.resx">
+      <DependentUpon>ModificarAsignacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Modificar\ModificarAñoLectivo.resx">
+      <DependentUpon>ModificarAñoLectivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Modificar\ModificarCondicionDocente.resx">
+      <DependentUpon>ModificarCondicionDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Modificar\ModificarDirectivo.resx">
+      <DependentUpon>ModificarDirectivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Modificar\ModificarDivision.resx">
+      <DependentUpon>ModificarDivision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Modificar\ModificarGrado.resx">
+      <DependentUpon>ModificarGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Modificar\ModificarNivel.resx">
+      <DependentUpon>ModificarNivel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Modificar\ModificarTurno.resx">
+      <DependentUpon>ModificarTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Modelo\ProyectoInscripciones.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProyectoInscripciones.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Modelo\ProyectoInscripciones.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProyectoInscripciones.edmx</DependentUpon>
+      <LastGenOutput>ProyectoInscripciones.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Modelo\ProyectoInscripciones.edmx.diagram">
+      <DependentUpon>ProyectoInscripciones.edmx</DependentUpon>
+    </None>
+    <None Include="Modelo\ProyectoInscripciones.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProyectoInscripciones.edmx</DependentUpon>
+      <LastGenOutput>ProyectoInscripciones.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ProyectoDataSet.xsc">
+      <DependentUpon>ProyectoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProyectoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProyectoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProyectoDataSet.xss">
+      <DependentUpon>ProyectoDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

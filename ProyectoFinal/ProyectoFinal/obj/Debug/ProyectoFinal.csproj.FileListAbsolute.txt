@@ -1,0 +1,106 @@
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csprojResolveAssemblyReference.cache
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Properties.Resources.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmalumnos.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmasignaciongrado.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmañolectivo.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmcondiciondocente.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmdirectivos.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmdivisiones.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmdocente.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmgrado.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abminscripcion.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abminstitucion.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmniveles.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmturno.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.Submenualtas.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Formabm.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.FormBase.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.formInicio.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.FormListado.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoAlumnos.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.listadoasignacion.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoAñoLectivo.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoCondicionDocente.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoDirectivos.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoDivisiones.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoDocentes.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoGrado.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoInscripciones.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoInstituciones.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoNiveles.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoTurnos.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.submenulistado.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.Mdocente.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.Minstitucion.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.Modificaralumno.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarAsignacion.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarAñoLectivo.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarCondicionDocente.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarDirectivo.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarDivision.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarGrado.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarNivel.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarTurno.resources
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csproj.GenerateResource.Cache
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.exe.config
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.exe
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.pdb
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.dll
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.xml
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.exe
+C:\Users\banegas\Desktop\Proyecto-Inscripciones4.2\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.exe.config
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.exe
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.exe
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.pdb
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.dll
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.xml
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csprojResolveAssemblyReference.cache
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Properties.Resources.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmalumnos.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmasignaciongrado.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmañolectivo.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmcondiciondocente.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmdirectivos.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmdivisiones.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmdocente.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmgrado.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abminscripcion.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abminstitucion.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmniveles.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.abmturno.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.abm.Submenualtas.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Formabm.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.FormBase.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.formInicio.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.FormListado.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoAlumnos.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.listadoasignacion.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoAñoLectivo.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoCondicionDocente.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoDirectivos.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoDivisiones.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoDocentes.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoGrado.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoInscripciones.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoInstituciones.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoNiveles.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.ListadoTurnos.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Listado.submenulistado.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.Mdocente.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.Minstitucion.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.Modificaralumno.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarAsignacion.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarAñoLectivo.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarCondicionDocente.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarDirectivo.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarDivision.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarGrado.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarNivel.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Vistas.Modificar.ModificarTurno.resources
+C:\Users\banegas\Desktop\Proyecto Definitivo\Proyecto-Inscripciones4.2\Proyecto-Inscripciones\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csproj.GenerateResource.Cache

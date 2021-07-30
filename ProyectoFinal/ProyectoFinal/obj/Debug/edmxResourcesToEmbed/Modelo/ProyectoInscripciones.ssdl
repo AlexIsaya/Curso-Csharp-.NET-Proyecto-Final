@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProyectoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Alumnos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Apellido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="Direccion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telefono" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Padre" Type="varchar" MaxLength="50" />
+    <Property Name="Madre" Type="varchar" MaxLength="50" />
+    <Property Name="Tutor" Type="varchar" MaxLength="50" />
+    <Property Name="Enfermedades" Type="varchar" MaxLength="50" />
+    <Property Name="Observaciones" Type="varchar" MaxLength="50" />
+    <Property Name="Foto" Type="image" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+    <Property Name="Dni" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AñoLectivo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Año" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AsignacionGrados">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DocentesID" Type="int" Nullable="false" />
+    <Property Name="DivisionesID" Type="int" Nullable="false" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CondicionDocente">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Directivos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Apellido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Dni" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telefono" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Direccion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Cv" Type="varbinary(max)" />
+    <Property Name="InstitucionID" Type="int" Nullable="false" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Divisiones">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="GradosID" Type="int" Nullable="false" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Docentes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Apellido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Dni" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telefono" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CondicionDocenteID" Type="int" Nullable="false" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Grados">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+    <Property Name="NivelesID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Inscripciones">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AlumnosID" Type="int" Nullable="false" />
+    <Property Name="DivisionesID" Type="int" Nullable="false" />
+    <Property Name="AñoLectivoID" Type="int" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="Observaciones" Type="varchar" MaxLength="50" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Institucion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CodigoMin" Type="varchar" MaxLength="50" />
+    <Property Name="Direccion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telefono" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Niveles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="InstitucionID" Type="int" Nullable="false" />
+    <Property Name="TurnoID" Type="int" Nullable="false" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Turnos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AsignacionGrados_Divisiones">
+    <End Role="Divisiones" Type="Self.Divisiones" Multiplicity="1" />
+    <End Role="AsignacionGrados" Type="Self.AsignacionGrados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Divisiones">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AsignacionGrados">
+        <PropertyRef Name="DivisionesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AsignacionGrados_Docentes">
+    <End Role="Docentes" Type="Self.Docentes" Multiplicity="1" />
+    <End Role="AsignacionGrados" Type="Self.AsignacionGrados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Docentes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AsignacionGrados">
+        <PropertyRef Name="DocentesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Directivos_Institucion">
+    <End Role="Institucion" Type="Self.Institucion" Multiplicity="1" />
+    <End Role="Directivos" Type="Self.Directivos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Institucion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Directivos">
+        <PropertyRef Name="InstitucionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Divisiones_Grados">
+    <End Role="Grados" Type="Self.Grados" Multiplicity="1" />
+    <End Role="Divisiones" Type="Self.Divisiones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grados">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Divisiones">
+        <PropertyRef Name="GradosID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Docentes_CondicionDocente">
+    <End Role="CondicionDocente" Type="Self.CondicionDocente" Multiplicity="1" />
+    <End Role="Docentes" Type="Self.Docentes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CondicionDocente">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Docentes">
+        <PropertyRef Name="CondicionDocenteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Grados_Niveles">
+    <End Role="Niveles" Type="Self.Niveles" Multiplicity="1" />
+    <End Role="Grados" Type="Self.Grados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Niveles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Grados">
+        <PropertyRef Name="NivelesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inscripciones_Alumnos">
+    <End Role="Alumnos" Type="Self.Alumnos" Multiplicity="1" />
+    <End Role="Inscripciones" Type="Self.Inscripciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumnos">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Inscripciones">
+        <PropertyRef Name="AlumnosID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inscripciones_AñoLectivo">
+    <End Role="AñoLectivo" Type="Self.AñoLectivo" Multiplicity="1" />
+    <End Role="Inscripciones" Type="Self.Inscripciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AñoLectivo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Inscripciones">
+        <PropertyRef Name="AñoLectivoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inscripciones_Divisiones">
+    <End Role="Divisiones" Type="Self.Divisiones" Multiplicity="1" />
+    <End Role="Inscripciones" Type="Self.Inscripciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Divisiones">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Inscripciones">
+        <PropertyRef Name="DivisionesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Niveles_Institucion">
+    <End Role="Institucion" Type="Self.Institucion" Multiplicity="1" />
+    <End Role="Niveles" Type="Self.Niveles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Institucion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Niveles">
+        <PropertyRef Name="InstitucionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Niveles_Turnos">
+    <End Role="Turnos" Type="Self.Turnos" Multiplicity="1" />
+    <End Role="Niveles" Type="Self.Niveles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turnos">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Niveles">
+        <PropertyRef Name="TurnoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Asignaciondivisiondocente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Inscripcionesconsultalistado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="ProyectoModelStoreContainer">
+    <EntitySet Name="Alumnos" EntityType="Self.Alumnos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AñoLectivo" EntityType="Self.AñoLectivo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AsignacionGrados" EntityType="Self.AsignacionGrados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CondicionDocente" EntityType="Self.CondicionDocente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Directivos" EntityType="Self.Directivos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Divisiones" EntityType="Self.Divisiones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Docentes" EntityType="Self.Docentes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grados" EntityType="Self.Grados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Inscripciones" EntityType="Self.Inscripciones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Institucion" EntityType="Self.Institucion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Niveles" EntityType="Self.Niveles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Turnos" EntityType="Self.Turnos" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AsignacionGrados_Divisiones" Association="Self.FK_AsignacionGrados_Divisiones">
+      <End Role="Divisiones" EntitySet="Divisiones" />
+      <End Role="AsignacionGrados" EntitySet="AsignacionGrados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AsignacionGrados_Docentes" Association="Self.FK_AsignacionGrados_Docentes">
+      <End Role="Docentes" EntitySet="Docentes" />
+      <End Role="AsignacionGrados" EntitySet="AsignacionGrados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Directivos_Institucion" Association="Self.FK_Directivos_Institucion">
+      <End Role="Institucion" EntitySet="Institucion" />
+      <End Role="Directivos" EntitySet="Directivos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Divisiones_Grados" Association="Self.FK_Divisiones_Grados">
+      <End Role="Grados" EntitySet="Grados" />
+      <End Role="Divisiones" EntitySet="Divisiones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Docentes_CondicionDocente" Association="Self.FK_Docentes_CondicionDocente">
+      <End Role="CondicionDocente" EntitySet="CondicionDocente" />
+      <End Role="Docentes" EntitySet="Docentes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Grados_Niveles" Association="Self.FK_Grados_Niveles">
+      <End Role="Niveles" EntitySet="Niveles" />
+      <End Role="Grados" EntitySet="Grados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inscripciones_Alumnos" Association="Self.FK_Inscripciones_Alumnos">
+      <End Role="Alumnos" EntitySet="Alumnos" />
+      <End Role="Inscripciones" EntitySet="Inscripciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inscripciones_AñoLectivo" Association="Self.FK_Inscripciones_AñoLectivo">
+      <End Role="AñoLectivo" EntitySet="AñoLectivo" />
+      <End Role="Inscripciones" EntitySet="Inscripciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inscripciones_Divisiones" Association="Self.FK_Inscripciones_Divisiones">
+      <End Role="Divisiones" EntitySet="Divisiones" />
+      <End Role="Inscripciones" EntitySet="Inscripciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Niveles_Institucion" Association="Self.FK_Niveles_Institucion">
+      <End Role="Institucion" EntitySet="Institucion" />
+      <End Role="Niveles" EntitySet="Niveles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Niveles_Turnos" Association="Self.FK_Niveles_Turnos">
+      <End Role="Turnos" EntitySet="Turnos" />
+      <End Role="Niveles" EntitySet="Niveles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

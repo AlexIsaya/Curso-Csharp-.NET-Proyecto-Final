@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aa5e2901546541e5a7e0a4e0846facb3" Name="Diagram1">
+        <EntityTypeShape EntityType="ProyectoModel.Alumnos" Width="1.5" PointX="13.5" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoModel.AñoLectivo" Width="1.5" PointX="13.5" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoModel.AsignacionGrados" Width="1.5" PointX="12.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoModel.CondicionDocente" Width="1.5" PointX="8.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoModel.Directivos" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoModel.Divisiones" Width="1.5" PointX="10.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoModel.Docentes" Width="1.5" PointX="10.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoModel.Grados" Width="1.5" PointX="8.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoModel.Inscripciones" Width="1.5" PointX="15.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoModel.Institucion" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoModel.Niveles" Width="1.5" PointX="6" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoModel.Turnos" Width="1.5" PointX="3.75" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="ProyectoModel.FK_Inscripciones_Alumnos" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoModel.FK_Inscripciones_AñoLectivo" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoModel.FK_AsignacionGrados_Divisiones" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoModel.FK_AsignacionGrados_Docentes" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoModel.FK_Docentes_CondicionDocente" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoModel.FK_Directivos_Institucion" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoModel.FK_Divisiones_Grados" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoModel.FK_Inscripciones_Divisiones" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoModel.FK_Grados_Niveles" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoModel.FK_Niveles_Institucion" ManuallyRouted="false" />
+        <AssociationConnector Association="ProyectoModel.FK_Niveles_Turnos" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProyectoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Alumnos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Padre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Madre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tutor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Enfermedades" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Observaciones" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <Property Name="Dni" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Inscripciones" Relationship="Self.FK_Inscripciones_Alumnos" FromRole="Alumnos" ToRole="Inscripciones" />
+  </EntityType>
+  <EntityType Name="AñoLectivo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Año" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Inscripciones" Relationship="Self.FK_Inscripciones_AñoLectivo" FromRole="AñoLectivo" ToRole="Inscripciones" />
+  </EntityType>
+  <EntityType Name="AsignacionGrados">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DocentesID" Type="Int32" Nullable="false" />
+    <Property Name="DivisionesID" Type="Int32" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Divisiones" Relationship="Self.FK_AsignacionGrados_Divisiones" FromRole="AsignacionGrados" ToRole="Divisiones" />
+    <NavigationProperty Name="Docentes" Relationship="Self.FK_AsignacionGrados_Docentes" FromRole="AsignacionGrados" ToRole="Docentes" />
+  </EntityType>
+  <EntityType Name="CondicionDocente">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Docentes" Relationship="Self.FK_Docentes_CondicionDocente" FromRole="CondicionDocente" ToRole="Docentes" />
+  </EntityType>
+  <EntityType Name="Directivos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Dni" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Cv" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="InstitucionID" Type="Int32" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Institucion" Relationship="Self.FK_Directivos_Institucion" FromRole="Directivos" ToRole="Institucion" />
+  </EntityType>
+  <EntityType Name="Divisiones">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GradosID" Type="Int32" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AsignacionGrados" Relationship="Self.FK_AsignacionGrados_Divisiones" FromRole="Divisiones" ToRole="AsignacionGrados" />
+    <NavigationProperty Name="Grados" Relationship="Self.FK_Divisiones_Grados" FromRole="Divisiones" ToRole="Grados" />
+    <NavigationProperty Name="Inscripciones" Relationship="Self.FK_Inscripciones_Divisiones" FromRole="Divisiones" ToRole="Inscripciones" />
+  </EntityType>
+  <EntityType Name="Docentes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Dni" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CondicionDocenteID" Type="Int32" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AsignacionGrados" Relationship="Self.FK_AsignacionGrados_Docentes" FromRole="Docentes" ToRole="AsignacionGrados" />
+    <NavigationProperty Name="CondicionDocente" Relationship="Self.FK_Docentes_CondicionDocente" FromRole="Docentes" ToRole="CondicionDocente" />
+  </EntityType>
+  <EntityType Name="Grados">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <Property Name="NivelesID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Divisiones" Relationship="Self.FK_Divisiones_Grados" FromRole="Grados" ToRole="Divisiones" />
+    <NavigationProperty Name="Niveles" Relationship="Self.FK_Grados_Niveles" FromRole="Grados" ToRole="Niveles" />
+  </EntityType>
+  <EntityType Name="Inscripciones">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlumnosID" Type="Int32" Nullable="false" />
+    <Property Name="DivisionesID" Type="Int32" Nullable="false" />
+    <Property Name="AñoLectivoID" Type="Int32" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Observaciones" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Alumnos" Relationship="Self.FK_Inscripciones_Alumnos" FromRole="Inscripciones" ToRole="Alumnos" />
+    <NavigationProperty Name="AñoLectivo" Relationship="Self.FK_Inscripciones_AñoLectivo" FromRole="Inscripciones" ToRole="AñoLectivo" />
+    <NavigationProperty Name="Divisiones" Relationship="Self.FK_Inscripciones_Divisiones" FromRole="Inscripciones" ToRole="Divisiones" />
+  </EntityType>
+  <EntityType Name="Institucion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodigoMin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Directivos" Relationship="Self.FK_Directivos_Institucion" FromRole="Institucion" ToRole="Directivos" />
+    <NavigationProperty Name="Niveles" Relationship="Self.FK_Niveles_Institucion" FromRole="Institucion" ToRole="Niveles" />
+  </EntityType>
+  <EntityType Name="Niveles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="InstitucionID" Type="Int32" Nullable="false" />
+    <Property Name="TurnoID" Type="Int32" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Grados" Relationship="Self.FK_Grados_Niveles" FromRole="Niveles" ToRole="Grados" />
+    <NavigationProperty Name="Institucion" Relationship="Self.FK_Niveles_Institucion" FromRole="Niveles" ToRole="Institucion" />
+    <NavigationProperty Name="Turnos" Relationship="Self.FK_Niveles_Turnos" FromRole="Niveles" ToRole="Turnos" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Turnos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Niveles" Relationship="Self.FK_Niveles_Turnos" FromRole="Turnos" ToRole="Niveles" />
+  </EntityType>
+  <Association Name="FK_Inscripciones_Alumnos">
+    <End Role="Alumnos" Type="Self.Alumnos" Multiplicity="1" />
+    <End Role="Inscripciones" Type="Self.Inscripciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumnos">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Inscripciones">
+        <PropertyRef Name="AlumnosID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inscripciones_AñoLectivo">
+    <End Role="AñoLectivo" Type="Self.AñoLectivo" Multiplicity="1" />
+    <End Role="Inscripciones" Type="Self.Inscripciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AñoLectivo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Inscripciones">
+        <PropertyRef Name="AñoLectivoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AsignacionGrados_Divisiones">
+    <End Role="Divisiones" Type="Self.Divisiones" Multiplicity="1" />
+    <End Role="AsignacionGrados" Type="Self.AsignacionGrados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Divisiones">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AsignacionGrados">
+        <PropertyRef Name="DivisionesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AsignacionGrados_Docentes">
+    <End Role="Docentes" Type="Self.Docentes" Multiplicity="1" />
+    <End Role="AsignacionGrados" Type="Self.AsignacionGrados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Docentes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AsignacionGrados">
+        <PropertyRef Name="DocentesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Docentes_CondicionDocente">
+    <End Role="CondicionDocente" Type="Self.CondicionDocente" Multiplicity="1" />
+    <End Role="Docentes" Type="Self.Docentes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CondicionDocente">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Docentes">
+        <PropertyRef Name="CondicionDocenteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Directivos_Institucion">
+    <End Role="Institucion" Type="Self.Institucion" Multiplicity="1" />
+    <End Role="Directivos" Type="Self.Directivos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Institucion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Directivos">
+        <PropertyRef Name="InstitucionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Divisiones_Grados">
+    <End Role="Grados" Type="Self.Grados" Multiplicity="1" />
+    <End Role="Divisiones" Type="Self.Divisiones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grados">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Divisiones">
+        <PropertyRef Name="GradosID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inscripciones_Divisiones">
+    <End Role="Divisiones" Type="Self.Divisiones" Multiplicity="1" />
+    <End Role="Inscripciones" Type="Self.Inscripciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Divisiones">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Inscripciones">
+        <PropertyRef Name="DivisionesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Grados_Niveles">
+    <End Role="Niveles" Type="Self.Niveles" Multiplicity="1" />
+    <End Role="Grados" Type="Self.Grados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Niveles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Grados">
+        <PropertyRef Name="NivelesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Niveles_Institucion">
+    <End Role="Institucion" Type="Self.Institucion" Multiplicity="1" />
+    <End Role="Niveles" Type="Self.Niveles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Institucion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Niveles">
+        <PropertyRef Name="InstitucionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Niveles_Turnos">
+    <End Role="Turnos" Type="Self.Turnos" Multiplicity="1" />
+    <End Role="Niveles" Type="Self.Niveles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turnos">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Niveles">
+        <PropertyRef Name="TurnoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProyectoEntities6" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Alumnos" EntityType="Self.Alumnos" />
+    <EntitySet Name="AñoLectivo" EntityType="Self.AñoLectivo" />
+    <EntitySet Name="AsignacionGrados" EntityType="Self.AsignacionGrados" />
+    <EntitySet Name="CondicionDocente" EntityType="Self.CondicionDocente" />
+    <EntitySet Name="Directivos" EntityType="Self.Directivos" />
+    <EntitySet Name="Divisiones" EntityType="Self.Divisiones" />
+    <EntitySet Name="Docentes" EntityType="Self.Docentes" />
+    <EntitySet Name="Grados" EntityType="Self.Grados" />
+    <EntitySet Name="Inscripciones" EntityType="Self.Inscripciones" />
+    <EntitySet Name="Institucion" EntityType="Self.Institucion" />
+    <EntitySet Name="Niveles" EntityType="Self.Niveles" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Turnos" EntityType="Self.Turnos" />
+    <AssociationSet Name="FK_Inscripciones_Alumnos" Association="Self.FK_Inscripciones_Alumnos">
+      <End Role="Alumnos" EntitySet="Alumnos" />
+      <End Role="Inscripciones" EntitySet="Inscripciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inscripciones_AñoLectivo" Association="Self.FK_Inscripciones_AñoLectivo">
+      <End Role="AñoLectivo" EntitySet="AñoLectivo" />
+      <End Role="Inscripciones" EntitySet="Inscripciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AsignacionGrados_Divisiones" Association="Self.FK_AsignacionGrados_Divisiones">
+      <End Role="Divisiones" EntitySet="Divisiones" />
+      <End Role="AsignacionGrados" EntitySet="AsignacionGrados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AsignacionGrados_Docentes" Association="Self.FK_AsignacionGrados_Docentes">
+      <End Role="Docentes" EntitySet="Docentes" />
+      <End Role="AsignacionGrados" EntitySet="AsignacionGrados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Docentes_CondicionDocente" Association="Self.FK_Docentes_CondicionDocente">
+      <End Role="CondicionDocente" EntitySet="CondicionDocente" />
+      <End Role="Docentes" EntitySet="Docentes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Directivos_Institucion" Association="Self.FK_Directivos_Institucion">
+      <End Role="Institucion" EntitySet="Institucion" />
+      <End Role="Directivos" EntitySet="Directivos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Divisiones_Grados" Association="Self.FK_Divisiones_Grados">
+      <End Role="Grados" EntitySet="Grados" />
+      <End Role="Divisiones" EntitySet="Divisiones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inscripciones_Divisiones" Association="Self.FK_Inscripciones_Divisiones">
+      <End Role="Divisiones" EntitySet="Divisiones" />
+      <End Role="Inscripciones" EntitySet="Inscripciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Grados_Niveles" Association="Self.FK_Grados_Niveles">
+      <End Role="Niveles" EntitySet="Niveles" />
+      <End Role="Grados" EntitySet="Grados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Niveles_Institucion" Association="Self.FK_Niveles_Institucion">
+      <End Role="Institucion" EntitySet="Institucion" />
+      <End Role="Niveles" EntitySet="Niveles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Niveles_Turnos" Association="Self.FK_Niveles_Turnos">
+      <End Role="Turnos" EntitySet="Turnos" />
+      <End Role="Niveles" EntitySet="Niveles" />
+    </AssociationSet>
+    <FunctionImport Name="Asignaciondivisiondocente" ReturnType="Collection(ProyectoModel.Asignaciondivisiondocente_Result)" />
+    <FunctionImport Name="Inscripcionesconsultalistado" ReturnType="Collection(ProyectoModel.Inscripcionesconsultalistado_Result)" />
+  </EntityContainer>
+  <ComplexType Name="Asignaciondivisiondocente_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Apellido" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Grado" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Division" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="Inscripcionesconsultalistado_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Apellido" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Dni" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="Fecha" Nullable="false" Precision="23" />
+    <Property Type="String" Name="Observaciones" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Institucion" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Grado" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Division" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Nivel" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Año" Nullable="false" MaxLength="50" />
+  </ComplexType>
+</Schema>
